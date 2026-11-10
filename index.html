@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Study Task Manager</h1>
+            <p>Plan your work. Track your progress.</p>
+        </header>
+
+        <section class="summary">
+            <div class="summary-card">
+                <h3>Total Tasks</h3>
+                <p id="total-tasks">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Completed</h3>
+                <p id="completed-tasks">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Remaining</h3>
+                <p id="remaining-tasks">0</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Add a New Task</h2>
+
+            <form id="task-form">
+
+                <input type="text" id="task-title" placeholder="Enter your task..." required>
+
+                <select id="task-priority">
+                    <option value="Low">Low Priority</option>
+                    <option value="Medium" selected>Medium Priority</option>
+                    <option value="High">High Priority</option>
+                </select>
+
+                <button type="submit" id="add-task">
+                    Add Task
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+            
+        </section>
+
+        <section class="tasks-section">
+
+            <div class="tasks-heading">
+                <h2>Your Tasks</h2>
+
+                <select id="task-filter">
+                    <option value="all">All Tasks</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+
+            <p id="empty-message">No tasks yet. Add your first task!</p>
+
+            <div id="tasks-container">
+
+
+                <!-- <div class="task-item priority-high ">
+
+                    <div class="task-info">
+                        <h3 class="task-title">Complete Physics homework</h3>
+                        <span class="task-priority">High Priority</span>
+                        <p class="task-status">Status: Active</p>
+                    </div>
+
+                    <div class="task-actions">
+                        <button class="complete-btn">✓ Complete</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+
+                </div> -->
+
+                
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
